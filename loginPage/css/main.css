@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif
+}
+
+#left-half {
+    width: 50%;
+    height: 100vh;
+    float: left;
+    background: url('../images/write.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right-half {
+    width: 50%;
+    height: 100vh;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: #fff;
+}
+
+button {
+    padding: 0.8em 2.8em;
+    border-radius: 40px;
+    color: #FFF;
+    background: linear-gradient(to right, #33ccff 0%, #6699ff 100%);
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    transition: all .4s;
+}
+
+button:hover {
+    transform: scale(1.1, 1.1);
+}
+
+#footer {
+    bottom: 1em;
+    position: fixed;
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #808080;
+    transition: all .4s;
+}
+
+a:hover {
+    color: #000;
+}
+
+#company-header {
+    color: #FFF;
+}
+
+#login {
+    color: #808080;
+    margin-bottom: 1.2em;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #808080;
+    outline: none;
+}
+
+.form-label {
+    margin: 2em;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
