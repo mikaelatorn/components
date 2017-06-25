@@ -29,10 +29,6 @@ button:hover {
     transform: scale(1.1, 1.1);
 }
 
-#company img {
-    width: 7em;
-}
-
 a {
     text-decoration: none;
     color: #808080;
@@ -66,6 +62,7 @@ h1 {
     width: 50%;
     height: 100vh;
     float: left;
+    transition: all 1s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,13 +75,21 @@ h1 {
 
 #login {
     color: #808080;
-    margin-bottom: 1.7em;
+    margin: 1.7em 0 1.7em 0;
 }
 
 #footer {
     bottom: 1em;
     position: fixed;
     width: 50%;
+}
+
+
+/*logo*/
+
+#logo {
+    width: 7em;
+    transition: all 1s ease-in-out;
 }
 
 

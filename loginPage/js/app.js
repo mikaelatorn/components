@@ -10,6 +10,9 @@ function login() {
 }
 
 function leftGrow() {
-    document.getElementById('right-half').style.display = 'none';
     document.getElementById('left-half').style.width = "100%";
+    document.getElementById('right-half').style.display = 'none';
+    if (window.innerWidth < 501) {
+        document.getElementById('logo').style.width = '7em';
+    }
 }
