@@ -8,8 +8,8 @@
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Source+Sans+Pro" rel="stylesheet">
     <!-- BOOTSTRAP -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/responsive.css">
@@ -19,6 +19,7 @@
 <body>
     <section id="left-half">
         <div id="company">
+            <img src="../images/logo1-01.png">
             <h1 id="company-header">Company Name</h1>
             <p>An online service to write down all your adventures</p>
         </div>
@@ -26,27 +27,31 @@
     </section>
     <section id="right-half">
         <div id="login-content">
-            <div>
-                <h1 id="login">Log In</h1>
-            </div>
-            <div>
-                <form>
+            <div class="front">
+                <div>
+                    <h1 id="login">Log In</h1>
+                </div>
+
+                <form onsubmit="login(); return false">
                     <div class="content-body">
-                        <div class="form-label">
-                            <label for="username"></label>
-                            <input name="username" id="username" placeholder="Username">
+                        <div class="form-group">
+                            <input class="inputMaterial" name="username" id="username" required>
+                            <span class="bar"></span>
+                            <label class="labels" for="username"><i class="fa fa-user" aria-hidden="true"></i> Username</label>
                         </div>
-                        <div class="form-label">
-                            <label for="password"></label>
-                            <input name="password" id="password" placeholder="Password">
+                        <div class="form-group">
+                            <input class="inputMaterial" name="password" type="password" id="password" required>
+                            <span class="bar"></span>
+                            <label class="labels" for="password"><i class="fa fa-lock" aria-hidden="true"></i> Password</label>
                         </div>
                     </div>
-                    <div class="form-label">
+                    <div class="form-group" id="forgot-pass">
                         <a href="#">Forgot your password?</a>
                     </div>
-                    <button type="submit">Log in</button>
+                    <button id="submit-btn" type="submit">Log in</button>
                 </form>
             </div>
+            <div class="back"></div>
         </div>
         <div id="footer">
             <a href="#">Create an account here</a>
